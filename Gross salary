@@ -1,0 +1,33 @@
+#Problem: FLOW011
+#Language: C++
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+int main() {
+ 
+    
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+ 
+    int numberOfTestCases, basicSalary;
+ 
+    
+    cin>>numberOfTestCases;
+
+    while(numberOfTestCases--) {
+ 
+                cin>>basicSalary;
+ 
+        // * Displaying the gross salary for the current test case
+        cout<<fixed<<setprecision(2);
+        if(basicSalary<1500) {
+            cout<<basicSalary*2<<endl;
+        } else {
+            cout<<basicSalary+basicSalary*0.98+500<<endl;
+        }
+    }
+}
