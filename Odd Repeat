@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+	ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n,k,s;
+		cin>>n>>k>>s;
+		s= s- (n*n);
+		
+		cout << s / (k-1) << endl;
+		
+} 
+		
+	return 0;
+	
+}
