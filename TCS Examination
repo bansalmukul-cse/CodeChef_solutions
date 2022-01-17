@@ -1,0 +1,58 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+	ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	int DSA1,TOC1,DM1,DSA2,TOC2,DM2;
+	cin>>DSA1>>TOC1>>DM1;
+	cin>>DSA2>>TOC2>>DM2;
+	int total1,total2;
+	total1=DSA1+TOC1+DM1;
+	total2=DSA2+TOC2+DM2;
+	if(total1>total2){
+		cout<<"Dragon"<<endl;
+	}
+	else if(total1<total2){
+		cout<<"Sloth"<<endl;
+	}
+	else if(total1=total2){
+		if(DSA1>DSA2){
+			cout<<"Dragon"<<endl;	
+		}
+		else if(DSA1<DSA2){
+			cout<<"Sloth"<<endl;
+		}
+		else if(DSA1=DSA2){
+			if(TOC1>TOC2){
+				cout<<"Dragon"<<endl;
+			}
+			else if(TOC1<TOC2){
+				cout<<"Sloth"<<endl;
+			}
+			else {
+				if(DM1>DM2){
+					cout<<"Dragon"<<endl;
+				}
+				else if(DM1<DM2){
+					cout<<"Sloth"<<endl;
+				}
+				else{
+					cout<<"Tie"<<endl;
+				}
+				
+			}
+			
+		}
+	}
+	
+} 
+		
+	return 0;
+	
+}
